@@ -1,0 +1,58 @@
+<!DOCType html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>mobile landin page</title>
+        <link rel="stylesheet" href="styole.css">
+    </head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="benz2.png" class="logo"></a>
+            <ul>
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="#"><b>Menu</b></a></li>
+                <li><a href="#"><b>New Model</b></a></li>
+                <li><a href="#"><b>Booking</b></a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Big Rides Only<br>It's <span>Crazy</span></h2>
+            <p>
+                Life Is A Race, Be Creative To Win and Utilize The Source.
+            </p>
+            <a href="#">LEARN MORE</a>
+        </div>
+        <div class="imgBox">
+            <img src="car (1).png" class="carz">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="car (1).png" onclick="imgSlider('car (1).png');changeCircleColor('#017143')"></li>
+            <li><img src="car (2).png" onclick="imgSlider('car (2).png');changeCircleColor('#FFC300')"></li>
+            <li><img src="car (3).png" onclick="imgSlider('car (3).png');changeCircleColor('#1589ff')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="twitterr (1).png"></a></li>
+            <li><a href="#"><img src="insta (1).png"></a></li>
+            <li><a href="#"><img src="youtube (1).png"></a></li>
+        </ul>
+
+    </section>
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.carz').src = anything;
+
+    }
+
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+
+    }
+    </script>
+</body>
+</html>
+
